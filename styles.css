@@ -1,0 +1,54 @@
+body {
+    background: black url('dragon.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    color: black;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px #FFFFFF;
+    font-family: 'Mystery Quest', cursive;
+    margin-top: 50px; /* Agrega un margen superior de 50px */
+    animation: fadein 2s; /* Agrega un retraso de 2 segundos */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: black;
+    background-color: white;
+}
