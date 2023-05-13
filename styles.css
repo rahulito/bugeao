@@ -12,21 +12,38 @@ body {
     text-align: center;
 }
 
+.social {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.social ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social ul li {
+    margin: 10px 0;
+}
+
 .title {
     color: black;
     font-size: 3em;
     text-shadow: 2px 2px 4px #FFFFFF;
     font-family: 'Mystery Quest', cursive;
-    margin-top: 50px; /* Agrega un margen superior de 50px */
-    animation: fadein 2s; /* Agrega un retraso de 2 segundos */
+    margin-top: 50px; 
+    animation: fadein 2s; 
 }
 
 @keyframes fadein {
     from {
-        opacity:0;
+        opacity: 0;
     }
     to {
-        opacity:1;
+        opacity: 1;
     }
 }
 
@@ -35,17 +52,17 @@ ul {
     padding: 0;
 }
 
-ul li {
-    margin: 10px 0;
-}
-
 a {
+    display: inline-block;
     color: white;
     text-decoration: none;
     border: 2px solid white;
-    padding: 5px 10px;
-    border-radius: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
     transition: all 0.3s ease;
+    text-align: center;
+    width: 100px; /* establece el ancho de todos los enlaces al mismo tamaño */
+    box-sizing: border-box; /* para que el padding y el borde estén incluidos en el ancho y la altura */
 }
 
 a:hover {
