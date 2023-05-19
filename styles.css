@@ -31,7 +31,7 @@ body {
 .dropdown-container ul li{
 	width:100px;
 	padding:5px;
-	background-color: black;
+	background-color: none;
 }
 
 .dropdown-container:hover, .dropdown-container ul.show{
